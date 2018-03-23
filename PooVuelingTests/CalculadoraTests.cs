@@ -14,28 +14,39 @@ namespace PooVueling.Tests
     {
         ICalculadora iCalculadora = new Calculadora();
 
-        [TestMethod()]
-        public void DivisionIntegrationTest()
+        //[TestMethod()]
+        [DataRow(4,2,2)]
+        [DataRow(9,3,3)]
+        [DataTestMethod]
+        public void DivisionIntegrationTest(int num1, int num2, int resultado)
         {
-            Assert.IsTrue(iCalculadora.Division(8,2) == 4);
+            Assert.IsTrue(iCalculadora.Division(num1,num2) == resultado);
         }
 
-        [TestMethod()]
-        public void MultiplicacionIntegrationTest()
+        //[TestMethod()]
+        [DataRow(4,2,8)]
+        [DataRow(6,3,18)]
+        [DataTestMethod]
+        public void MultiplicacionIntegrationTest(int num1, int num2, int resultado)
         {
-            Assert.IsTrue(iCalculadora.Multiplicacion(2, 5) == 10);
+            Assert.IsTrue(iCalculadora.Multiplicacion(num1, num2) == resultado);
         }
 
-        [TestMethod()]
-        public void RestaIntegrationTest()
+        //[TestMethod()]
+        [DataRow(4, 2, 2)]
+        [DataRow(6, 3, 3)]
+        [DataTestMethod]
+        public void RestaIntegrationTest(int num1, int num2, int resultado)
         {
-            Assert.IsTrue(iCalculadora.Resta(4, 1) == 3);
+            Assert.IsTrue(iCalculadora.Resta(num1, num2) == resultado);
         }
 
-        [TestMethod()]
-        public void SumaIntegrationTest()
+        //[TestMethod()]
+        [DataRow(4,1,5)]
+        [DataTestMethod]
+        public void SumaIntegrationTest(int num1, int num2, int resultado)
         {
-            Assert.IsTrue(iCalculadora.Suma(2, 2) == 4);
+            Assert.IsTrue(iCalculadora.Suma(num1, num2) == resultado);
         }
 
     }
