@@ -7,28 +7,40 @@ namespace PooVuelingXunitTests
     {
         ICalculadora iCalculadora = new Calculadora();
 
-        [Fact]
-        public void SumaTest()
+        //[Fact]
+        [Theory]
+        [InlineData(2,5,7)]
+        [InlineData(4,4,8)]
+        public void SumaTest(int num1, int num2, int result)
         {
-            Assert.True(iCalculadora.Suma(7, 3) == 10);
+            Assert.True(iCalculadora.Suma(num1, num2) == result);
         }
 
-        [Fact]
-        public void RestaTest()
+        //[Fact]
+        [Theory]
+        [InlineData(5, 5, 0)]
+        [InlineData(4, 1, 3)]
+        public void RestaTest(int num1, int num2, int result)
         {
-            Assert.True(iCalculadora.Resta(2, 1) == 1);
+            Assert.True(iCalculadora.Resta(num1, num2) == result);
         }
 
-        [Fact]
-        public void DivisionTest()
+        //[Fact]
+        [Theory]
+        [InlineData(12, 2, 6)]
+        [InlineData(4, 4, 1)]
+        public void DivisionTest(int num1, int num2, int result)
         {
-            Assert.True(iCalculadora.Division(10, 2) == 5);
+            Assert.True(iCalculadora.Division(num1, num2) == result);
         }
 
-        [Fact]
-        public void MultiplicacionTest()
+        //[Fact]
+        [Theory]
+        [InlineData(2, 5, 10)]
+        [InlineData(4, 4, 16)]
+        public void MultiplicacionTest(int num1, int num2, int result)
         {
-            Assert.True(iCalculadora.Multiplicacion(11, 2) == 22);
+            Assert.True(iCalculadora.Multiplicacion(num1, num2) == result);
         }
 
     }
