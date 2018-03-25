@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasXunitTest", "Pruebas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuCalculadora", "MenuCalculadora\MenuCalculadora.csproj", "{8DE0429D-D26A-48BC-9A46-28303813CD3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadatos", "Metadatos\Metadatos.csproj", "{A9F62D35-BE5F-42E6-BF21-B2ECF1849072}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8DE0429D-D26A-48BC-9A46-28303813CD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE0429D-D26A-48BC-9A46-28303813CD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE0429D-D26A-48BC-9A46-28303813CD3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F62D35-BE5F-42E6-BF21-B2ECF1849072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F62D35-BE5F-42E6-BF21-B2ECF1849072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F62D35-BE5F-42E6-BF21-B2ECF1849072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F62D35-BE5F-42E6-BF21-B2ECF1849072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
